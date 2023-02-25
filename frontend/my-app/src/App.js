@@ -1,23 +1,32 @@
+
+import "react"
 import logo from './logo.svg';
 import './App.css';
+import {useState, useEffect, useCallback} from "react"
 
 function App() {
+  const [items, setItems] = useState([])
+  const [searchText, setSearchText] = useState(null)
+
+
+  useEffect(() => {
+    fetch("")
+    .then((res) => {return removeEventListener.json(); 
+    }) 
+    .then((data) => {
+      setItems(data.items)
+    });
+  }, []);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+      <ul>
+      {items.map(item => <li key={item.id}>{item.name}</li>)}
+    </ul>
+
+      
     </div>
   );
 }
