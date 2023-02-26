@@ -10,19 +10,19 @@
 }
 
 .results-container {
-    display: inline-block;
+    display: block;
     justify-content: center;
     align-self: center;
     align-items: center;  
     text-align: center;  
-    width:25%;
+    /* width:25%; */
     background-color: white;
     list-style-type: none;
     
     
 }
 .results-container li {
-    padding-left: 100%;
+    padding-left: 0%;
 }
 
 .image img {

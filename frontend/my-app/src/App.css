@@ -40,13 +40,16 @@
 * container {
   width: auto;
   height: auto;
+
 }
 
 .results {
   height:auto;
   width:auto;
+
 }
 
 .results-li {
   display: block;
+
 }
