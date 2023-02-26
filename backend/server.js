@@ -12,7 +12,10 @@ const usersCollection = 'users';
 app.use(bodyParser.urlencoded({ extended: true })); 
 
 // Register a new user
-app.post('/register', function(req, res) {
+app.post('https://localhost:3000', function(req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
   const username = req.body.username;
   const email = req.body.email;
   const password = req.body.password;
