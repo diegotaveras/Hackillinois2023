@@ -16,8 +16,7 @@ mongoose.connect(mongoURL, {
 })
 .catch((e)=> console.log(e));
 
-app.listen(3000, () => {
-    console.log("I'm here");
+app.listen(3001, () => {
     console.log("Server Started");
 });
 
@@ -46,12 +45,12 @@ const user = mongoose.model("UserInfo");
 
 app.post("/register", async(req, res) => {
 
-    const { name, email, mobileNo } = req.body;
+    const { name, email, password } = req.body;
     try {
         await user.create({
             uname: name,
             email,
-            phoneNo: mobileNo,
+            password,
         });
         res.send({status:"ok"});
     
