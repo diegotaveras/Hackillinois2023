@@ -3,23 +3,28 @@
     justify-content: center;
     align-items: center;  
     text-align: center;  
-    padding-top:10%;
+    /* padding-top:10%; */
+    background-color: rgb(71, 191, 159);
+
 
 }
 
 .results-container {
-    display: flex;
+    display: inline-block;
     justify-content: center;
+    align-self: center;
     align-items: center;  
     text-align: center;  
-
+    width:25%;
+    background-color: white;
     list-style-type: none;
     
+    
+}
+.results-container li {
+    padding-left: 100%;
 }
 
-/* .image {
-    height: 10%;
-} */
 .image img {
 width: 200px;
 height: 200px;

@@ -52,7 +52,7 @@ function SearchBar() {
       <button onClick={handleSearch}>Search</button>
     </div>
     <div className="results-container">
-      <ul style={{ listStyleType: "none", padding: 0 }}>
+      <ul style={{ listStyleType: "none", padding: 5 }}>
       {
         
      
