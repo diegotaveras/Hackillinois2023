@@ -1,8 +1,33 @@
-.searchbar {
+.searchbar-container {
     display: flex;
     justify-content: center;
     align-items: center;  
     text-align: center;  
-    padding-top:10%;
+    /* padding-top:10%; */
+    background-color: rgb(71, 191, 159);
+
 
 }
+
+.results-container {
+    display: inline-block;
+    justify-content: center;
+    align-self: center;
+    align-items: center;  
+    text-align: center;  
+    width:25%;
+    background-color: white;
+    list-style-type: none;
+    
+    
+}
+.results-container li {
+    padding-left: 100%;
+}
+
+.image img {
+width: 200px;
+height: 200px;
+
+}
+/* .results-container */

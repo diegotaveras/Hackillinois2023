@@ -1,10 +1,9 @@
 import axios from 'axios';
 import React from 'react';
-import styles from './RegisterForm.module.css'; // Import the CSS module
+import styles from './LoginForm.module.css'; // Import the CSS module
 
-class RegisterForm extends React.Component {
+class LoginForm extends React.Component {
   state = {
-    username: '',
     email: '',
     password: '',
   };
@@ -22,10 +21,9 @@ class RegisterForm extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    const { username, email, password } = this.state;
+    const { email, password } = this.state;
 
-    axios.post('/https://localhost:3000', {
-      username,
+    axios.post('http://localhost:3000/login', {
       email,
       password,
     })
@@ -43,10 +41,6 @@ class RegisterForm extends React.Component {
     return (
       <form className={styles.form} onSubmit={this.handleSubmit}>
         <label className={styles.label}>
-          Username:
-          <input className={styles.input} type="text" name="username" value={this.state.username} onChange={this.handleInputChange} />
-        </label>
-        <label className={styles.label}>
           Email:
           <input className={styles.input} type="email" name="email" value={this.state.email} onChange={this.handleInputChange} />
         </label>
@@ -54,10 +48,10 @@ class RegisterForm extends React.Component {
           Password:
           <input className={styles.input} type="password" name="password" value={this.state.password} onChange={this.handleInputChange} />
         </label>
-        <button className={styles.button} type="submit">Register</button>
+        <button className={styles.button} type="submit">Login</button>
       </form>
     );
   }
 }
 
-export default RegisterForm;
+export default LoginForm;
