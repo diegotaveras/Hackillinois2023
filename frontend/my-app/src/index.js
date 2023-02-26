@@ -14,7 +14,6 @@ root.render(
 
     <Navbar />
     <App />
-    <RegisterForm/>
   </React.StrictMode>
 );
 
