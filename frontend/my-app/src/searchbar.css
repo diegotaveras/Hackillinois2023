@@ -1,4 +1,4 @@
-.searchbar {
+.searchbar-container {
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -6,3 +6,23 @@
     padding-top:10%;
 
 }
+
+.results-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;  
+
+    list-style-type: none;
+    
+}
+
+/* .image {
+    height: 10%;
+} */
+.image img {
+width: 200px;
+height: 200px;
+
+}
+/* .results-container */

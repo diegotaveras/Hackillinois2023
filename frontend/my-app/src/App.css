@@ -42,3 +42,11 @@
   height: auto;
 }
 
+.results {
+  height:10%;
+  width:auto;
+}
+
+.results-li {
+  display: block;
+}

@@ -6,11 +6,16 @@ import {useState, useEffect, useCallback} from "react"
 import SearchBar from "./searchbar.js"
 
 function App() {
+  
   return(
+
+    
+  
+  <div className="results">
+    <SearchBar/>
+  </div>
   
   
-  
-  <SearchBar/>
   
   
   )
