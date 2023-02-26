@@ -5,13 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './navbar';
 import SearchBar from './searchbar';
+import RegisterForm from "./authform.js";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const registration = new RegisterForm();
 root.render(
   <React.StrictMode>
 
     <Navbar />
     <App />
+    <RegisterForm/>
   </React.StrictMode>
 );
 
