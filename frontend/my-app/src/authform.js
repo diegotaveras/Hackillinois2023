@@ -23,7 +23,7 @@ class RegisterForm extends React.Component {
 
     const { username, email, password } = this.state;
 
-    axios.post('/https://localhost:3000', {
+    axios.post('http://localhost:3000', {
       username,
       email,
       password,
